@@ -9,7 +9,6 @@ interface MMProps {
 };
 
 const MM: React.FC<MMProps> = ({ markdown, className }) => {
-    console.log(markdown);
     return <Markdown className={`${className}`} remarkPlugins={[remarkGfm]}>{`${markdown}`}</Markdown >
 };
 
