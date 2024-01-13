@@ -28,6 +28,7 @@ export default function PlasmicLoaderPage(props: {
       prefetchedQueryData={queryCache}
       pageParams={pageMeta.params}
       pageQuery={router.query}
+      authRedirectUri={'https://revine.ai/projects'}
     >
       <PlasmicComponent component={pageMeta.displayName} />
     </PlasmicRootProvider>
