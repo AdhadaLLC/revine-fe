@@ -31,7 +31,7 @@ export default function PlasmicLoaderPage(props: {
       authRedirectUri={'https://revine.ai/projects'}
       globalContextsProps={{
         productContextProps: { tokenId: 'token-id' },
-        graphQLGlobalContextProps: { baseUrl: 'https://revine-stable.aaho.cc/api/graphql' }
+        graphQlSettingsProps: { baseUrl: 'https://revine-stable.aaho.cc/api/graphql' }
       }}
     >
       <PlasmicComponent component={pageMeta.displayName} />
