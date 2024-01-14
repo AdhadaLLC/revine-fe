@@ -27,11 +27,24 @@ export const PLASMIC = initPlasmicLoader({
 // PLASMIC.registerComponent(...);
 
 import Markdown from "./components/react-markdown"
+import { useEffect, useMemo, useState } from "react";
+import { GraphQLGlobalContext } from "./components/graphql-context";
+
 
 PLASMIC.registerComponent(Markdown, {
-  "name": "Markdown",
-  "props": {
-    "markdown": "string",
-    "className": "string",
+  name: "Markdown",
+  props: {
+    markdown: "string",
+    className: "string",
   }
+});
+
+PLASMIC.registerGlobalContext(GraphQLGlobalContext, {
+  name: "GraphQL Settings",
+  props: {
+    baseUrl: {
+      type: 'choice',
+      options: ["http://localhost:3000/api/graphql", 'https://revine-dev.aaho.cc/api/graphql', 'https://revine-stable.aaho.cc/api/graphql']
+    }
+  },
 });
