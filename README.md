@@ -1,6 +1,8 @@
 This is a Next.js project bootstrapped with [`create-plasmic-app`](https://www.npmjs.com/package/create-plasmic-app).
 
-## Getting Started
+This does not currently use the codegen feature of Plasmic, but rather the 'loader' or 'headless' or 'app host' feature. In essence, this repository is our main frontend server. It loads the majority of our app from Plasmic, except for custom code components which are declared here.
+
+## Development
 
 First, run the development server:
 
@@ -11,6 +13,12 @@ npm run dev
 Open your browser to see the result.
 
 You can start editing your project in Plasmic Studio. The page auto-updates as you edit the project.
+
+## Deployment
+
+If you are deploying changes you made to the Plasmic app, make sure to 'publish' said changes. After that, check if any updates were made to this repo. If so, then those changes must be deployed through Coolify.
+
+> Most changes you make will not end up changing anything in this repo and so publishing changes on Plasmic should satisfy most cases.
 
 ## Learn More
 
